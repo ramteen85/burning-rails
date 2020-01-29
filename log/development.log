@@ -4419,3 +4419,74 @@ Processing by FlightsController#getflights as HTML
 Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/flights/sydney/melb" for ::1 at 2020-01-30 10:36:53 +1100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting '}'
+        flight_number: 9,
+                     ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+        date: "20/12/2020",
+                           ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:16: syntax error, unexpected ',', expecting keyword_end
+        origin: 'SYD',
+                      ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:17: syntax error, unexpected ',', expecting keyword_end
+        destination: 'MEL',
+                           ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:28: syntax error, unexpected ']', expecting keyword_end
+    ]
+     ^):
+  
+app/controllers/flights_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/controllers/flights_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:16: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:17: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:28: syntax error, unexpected ']', expecting keyword_end
+Started GET "/flights/sydney/melb" for ::1 at 2020-01-30 10:36:55 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting '}'
+        flight_number: 9,
+                     ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+        date: "20/12/2020",
+                           ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:16: syntax error, unexpected ',', expecting keyword_end
+        origin: 'SYD',
+                      ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:17: syntax error, unexpected ',', expecting keyword_end
+        destination: 'MEL',
+                           ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:28: syntax error, unexpected ']', expecting keyword_end
+    ]
+     ^):
+  
+app/controllers/flights_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/controllers/flights_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:16: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:17: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:28: syntax error, unexpected ']', expecting keyword_end
+Started GET "/flights/sydney/melb" for ::1 at 2020-01-30 10:36:56 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting '}'
+        flight_number: 9,
+                     ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+        date: "20/12/2020",
+                           ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:16: syntax error, unexpected ',', expecting keyword_end
+        origin: 'SYD',
+                      ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:17: syntax error, unexpected ',', expecting keyword_end
+        destination: 'MEL',
+                           ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:28: syntax error, unexpected ']', expecting keyword_end
+    ]
+     ^):
+  
+app/controllers/flights_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/controllers/flights_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:16: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:17: syntax error, unexpected ',', expecting keyword_end
+app/controllers/flights_controller.rb:28: syntax error, unexpected ']', expecting keyword_end
