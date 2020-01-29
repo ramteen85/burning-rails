@@ -10,12 +10,16 @@ class FlightsController < ApplicationController
 
   def getflights
     @flights = [{
+        id: "l337"
+        flight_number: 9,
         date: "20/12/2020",
         origin: 'SYD',
         destination: 'MEL',
         plane: 747
       },
       {
+        id: 1337,
+        flight_number: 10,
         date: "20/12/2020",
         origin: 'SYD',
         destination: 'MEL',
