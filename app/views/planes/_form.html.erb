@@ -1,0 +1,97 @@
+<%= form_with(model: plane, local: true) do |form| %>
+  <% if plane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(plane.errors.count, "error") %> prohibited this plane from being saved:</h2>
+
+      <ul>
+      <% plane.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A1 %>
+    <%= form.text_field :A1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A2 %>
+    <%= form.text_field :A2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A3 %>
+    <%= form.text_field :A3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A4 %>
+    <%= form.text_field :A4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A5 %>
+    <%= form.text_field :A5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :B1 %>
+    <%= form.text_field :B1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :B2 %>
+    <%= form.text_field :B2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :B3 %>
+    <%= form.text_field :B3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :B4 %>
+    <%= form.text_field :B4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :B5 %>
+    <%= form.text_field :B5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :C1 %>
+    <%= form.text_field :C1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :C2 %>
+    <%= form.text_field :C2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :C3 %>
+    <%= form.text_field :C3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :C4 %>
+    <%= form.text_field :C4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :C5 %>
+    <%= form.text_field :C5 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
