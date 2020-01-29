@@ -3762,3 +3762,611 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 94ms (Views: 81.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-01-30 01:06:43 +1100
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2020-01-30 01:07:32 +1100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:6:in `index'
+Started PUT "/__web_console/repl_sessions/a4cb584e9e050c466b258a21b46872e0" for ::1 at 2020-01-30 01:07:36 +1100
+Started PUT "/__web_console/repl_sessions/a4cb584e9e050c466b258a21b46872e0" for ::1 at 2020-01-30 01:07:38 +1100
+Started PUT "/__web_console/repl_sessions/a4cb584e9e050c466b258a21b46872e0" for ::1 at 2020-01-30 01:07:48 +1100
+Started PUT "/__web_console/repl_sessions/a4cb584e9e050c466b258a21b46872e0" for ::1 at 2020-01-30 01:07:49 +1100
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Started GET "/" for ::1 at 2020-01-30 01:09:02 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 365ms (Views: 359.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-30 01:30:18 +1100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 25ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-30 01:30:20 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for ::1 at 2020-01-30 01:30:25 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:6
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/ram/.rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:6
+  Rendered users/index.html.erb within layouts/application (227.6ms)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 16.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `flights_path' for #<#<Class:0x007f88cabacca0>:0x007f88caba68a0>):
+     7: 
+     8: 
+     9:   <%= link_to 'Planes', planes_path %>
+    10:   <%= link_to 'Flight', flights_path %>
+    11:     <%= link_to 'Sign Up', new_user_path %>
+    12:     <%= link_to 'Login', users_path %>
+    13:     <h1>Login</h1>
+  
+app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb__1069957440952211448_70112746762840'
+Started GET "/rails/info/routes" for ::1 at 2020-01-30 01:30:34 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (12.8ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.5ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 82ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for ::1 at 2020-01-30 01:32:27 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:7: syntax error, unexpected ':', expecting '}'
+        format.json { message: "test" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+ormat.json { message: "test" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:63: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:7: syntax error, unexpected ':', expecting '}'
+app/controllers/users_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:63: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/" for ::1 at 2020-01-30 01:32:42 +1100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/users_controller.rb:7:in `format'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users/" for ::1 at 2020-01-30 01:34:26 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:7: syntax error, unexpected ':', expecting '}'
+       render :json { message: "test" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+nder :json { message: "test" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:63: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:7: syntax error, unexpected ':', expecting '}'
+app/controllers/users_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:63: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/" for ::1 at 2020-01-30 01:34:32 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:7: syntax error, unexpected ':', expecting '}'
+       render :json { message: "test" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+nder :json { message: "test" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:63: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:7: syntax error, unexpected ':', expecting '}'
+app/controllers/users_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:63: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/" for ::1 at 2020-01-30 01:34:54 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:7: syntax error, unexpected tIVAR, expecting keyword_end
+        render :json @users
+                           ^):
+  
+app/controllers/users_controller.rb:7: syntax error, unexpected tIVAR, expecting keyword_end
+Started GET "/users/" for ::1 at 2020-01-30 01:35:15 +1100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:7
+Completed 200 OK in 17ms (Views: 5.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-30 01:35:26 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (164.5ms)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `flights_path' for #<#<Class:0x007f88c8d4fd48>:0x007f88c8d4e100>):
+    1: <h1>Registration</h1>
+    2: 
+    3: <%= link_to 'Planes', planes_path %>
+    4: <%= link_to 'Flight', flights_path %>
+    5:     <%= link_to 'Login', users_path %>
+    6: <form action="/users" method="POST">
+    7:     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  
+app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___2610439434403761724_70112731022140'
+Started GET "/users/1" for ::1 at 2020-01-30 01:41:23 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:19: syntax error, unexpected ',', expecting =>
+         render json: { @user, message: "User Created!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+er, message: "User Created!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+         render json: { @user, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+er, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:19: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/1" for ::1 at 2020-01-30 01:42:15 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:19: syntax error, unexpected ',', expecting =>
+         render json: { @user, { message: "User Created!" }}
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+ { message: "User Created!" }}
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+         render json: { @user, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+er, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:19: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/1" for ::1 at 2020-01-30 01:42:16 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:19: syntax error, unexpected ',', expecting =>
+         render json: { @user, { message: "User Created!" }}
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+ { message: "User Created!" }}
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+         render json: { @user, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+er, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:19: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/1" for ::1 at 2020-01-30 01:42:37 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:19: syntax error, unexpected '}', expecting =>
+        render json: { @user }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+         render json: { @user, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+er, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:19: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/1" for ::1 at 2020-01-30 01:43:34 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+         render json: { @user, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+er, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/1" for ::1 at 2020-01-30 01:43:42 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+         render json: { @user, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+er, message: "User Updated!" }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+ render json: { @user.errors }
+                              ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:30: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:30: syntax error, unexpected '}', expecting keyword_end
+app/controllers/users_controller.rb:32: syntax error, unexpected '}', expecting =>
+app/controllers/users_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/1" for ::1 at 2020-01-30 01:45:21 +1100
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2020-01-30 01:45:54 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 109ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2020-01-30 01:46:20 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 111ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2020-01-30 01:46:31 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:12
+Completed 200 OK in 31ms (Views: 5.0ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/users" for ::1 at 2020-01-30 01:46:49 +1100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:7
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-30 01:46:56 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (10.5ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 38ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2020-01-30 01:48:04 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 404 Not Found in 19ms (ActiveRecord: 6.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/users_controller.rb:11:in `show'
+Started GET "/users/1" for ::1 at 2020-01-30 01:48:49 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 404 Not Found in 9ms (ActiveRecord: 5.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/users_controller.rb:11:in `show'
+Started GET "/users/1" for ::1 at 2020-01-30 01:50:38 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/1" for ::1 at 2020-01-30 01:50:50 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 4.9ms)
+
+
