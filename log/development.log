@@ -2759,3 +2759,1006 @@ Processing by SessionsController#create as HTML
 Completed 200 OK in 222ms (Views: 0.1ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/" for ::1 at 2020-01-29 23:24:18 +1100
+  [1m[35m (9.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hasan/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3605488183007144280)[0m
+  ↳ bin/rails:4
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20200129070244)
+  [1m[35m (11.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (68.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200129070244_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (5.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200129070244"]]
+  ↳ bin/rails:4
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreatePlanes (20200129091038)
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (29.1ms)[0m  [1m[35mCREATE TABLE "planes" ("id" bigserial primary key, "name" character varying, "A1" character varying DEFAULT 'empty', "A2" character varying DEFAULT 'empty', "A3" character varying DEFAULT 'empty', "A4" character varying DEFAULT 'empty', "A5" character varying DEFAULT 'empty', "B1" character varying DEFAULT 'empty', "B2" character varying DEFAULT 'empty', "B3" character varying DEFAULT 'empty', "B4" character varying DEFAULT 'empty', "B5" character varying DEFAULT 'empty', "C1" character varying DEFAULT 'empty', "C2" character varying DEFAULT 'empty', "C3" character varying DEFAULT 'empty', "C4" character varying DEFAULT 'empty', "C5" character varying DEFAULT 'empty', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200129091038_create_planes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200129091038"]]
+  ↳ bin/rails:4
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateFlights (20200129092455)
+  [1m[35m (6.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (23.1ms)[0m  [1m[35mCREATE TABLE "flights" ("id" bigserial primary key, "flight_number" character varying, "origin" character varying, "destination" character varying, "date" date, "plane_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200129092455_create_flights.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (6.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200129092455"]]
+  ↳ bin/rails:4
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (12.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(3605488183007144280)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for ::1 at 2020-01-29 23:24:59 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hasan/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 793ms (Views: 786.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2020-01-29 23:25:45 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"p16WWOgEeRKW+dqH71UZue3fm+t3jj7v0Mj2Ih3gf0Hv17lPW3iHZts68d9dOvZd1X59I8odE81oLoieT843+A==", "login"=>{"name"=>"test", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3
+Completed 200 OK in 88ms (Views: 3.9ms | ActiveRecord: 33.8ms)
+
+
+Started POST "/users" for ::1 at 2020-01-29 23:26:01 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"p16WWOgEeRKW+dqH71UZue3fm+t3jj7v0Mj2Ih3gf0Hv17lPW3iHZts68d9dOvZd1X59I8odE81oLoieT843+A==", "user"=>{"name"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test"], ["password_digest", "$2a$12$tX6kQdHTVt6tSA67lH.SZu6svuVy8wXh/ogCtdAa/8msIZl43Nz0e"], ["created_at", "2020-01-29 12:26:01.632392"], ["updated_at", "2020-01-29 12:26:01.632392"]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8
+Completed 200 OK in 397ms (Views: 1.1ms | ActiveRecord: 23.4ms)
+
+
+Started POST "/sessions" for ::1 at 2020-01-29 23:26:11 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"p16WWOgEeRKW+dqH71UZue3fm+t3jj7v0Mj2Ih3gf0Hv17lPW3iHZts68d9dOvZd1X59I8odE81oLoieT843+A==", "login"=>{"name"=>"test", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3
+Completed 200 OK in 365ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sessions" for ::1 at 2020-01-29 23:26:46 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/planes" for ::1 at 2020-01-29 23:26:53 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (15.7ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:29
+  Rendered planes/index.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 203ms (Views: 126.2ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:27:19 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (2.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:18
+  Rendered flights/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 238ms (Views: 204.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/flights/new" for ::1 at 2020-01-29 23:27:24 +1100
+Processing by FlightsController#new as HTML
+  Rendering flights/new.html.erb within layouts/application
+  Rendered flights/_form.html.erb (42.3ms)
+  Rendered flights/new.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 113ms (Views: 82.2ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/flights" for ::1 at 2020-01-29 23:27:43 +1100
+Processing by FlightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5+2ynicbCtll/hgwLUdHbYpPbdFgwyaF0RKXN8k5NNqvZJ2JlGf0rSg9M2ifKKiJsu6LGd1QC6dp9OmLmxd8Yw==", "flight"=>{"flight_number"=>"da", "origin"=>"da", "destination"=>"da", "date(1i)"=>"2020", "date(2i)"=>"1", "date(3i)"=>"29", "plane_id"=>"737"}, "commit"=>"Create Flight"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mFlight Create (8.2ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "origin", "destination", "date", "plane_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["flight_number", "da"], ["origin", "da"], ["destination", "da"], ["date", "2020-01-29"], ["plane_id", 737], ["created_at", "2020-01-29 12:27:43.548949"], ["updated_at", "2020-01-29 12:27:43.548949"]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/flights_controller.rb:30
+Redirected to http://localhost:3000/flights/1
+Completed 302 Found in 35ms (ActiveRecord: 18.7ms)
+
+
+Started GET "/flights/1" for ::1 at 2020-01-29 23:27:43 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (0.6ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:67
+  Rendering flights/show.html.erb within layouts/application
+  Rendered flights/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:27:47 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (3.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:18
+  Rendered flights/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 87ms (Views: 69.7ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/flights/1" for ::1 at 2020-01-29 23:27:55 +1100
+Processing by FlightsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rsKG/FqV7hlC+KLvWd/cGRSLG+ygClY9+3Soh00DckrmS6nr6ekQbQ87ibfrsDP9LCr9JB2Zex9DktY7Hy068w==", "id"=>"1"}
+  [1m[36mFlight Load (0.7ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:67
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/flights_controller.rb:57
+  [1m[36mFlight Destroy (13.0ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/flights_controller.rb:57
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/flights_controller.rb:57
+Redirected to http://localhost:3000/flights
+Completed 302 Found in 24ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:27:55 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:18
+  Rendered flights/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions" for ::1 at 2020-01-29 23:32:10 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-01-29 23:32:20 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sessions" for ::1 at 2020-01-29 23:33:02 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2020-01-29 23:33:14 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (1.3ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:29
+  Rendered planes/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 92ms (Views: 76.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-01-29 23:33:29 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 81ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-29 23:39:55 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-29 23:41:09 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (635.2ms)
+Completed 500 Internal Server Error in 679ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user' for #<#<Class:0x007fa15d9e6ca8>:0x007fa1586f5d78>
+Did you mean?  new_user_url):
+    4:     <title>Document</title>
+    5: </head>
+    6: <body>
+    7:   <%= link_to 'Sign Up', new_user %>
+    8:     <h1>Login</h1>
+    9: 
+   10:     <form action="/sessions" method="POST">
+  
+app/views/users/index.html.erb:7:in `_app_views_users_index_html_erb___328818436517489486_70165475079080'
+Started GET "/" for ::1 at 2020-01-29 23:42:09 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 119ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:42:12 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 107ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:42:37 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 53ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-01-29 23:42:48 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"QxyugDQaZF/KBkWnHkeVwqExNJcewspw4OVprmbVNK8LlYGXh2aaK4fFbv+sKHommZDSX6NR51JYAxcSNPt8Fg==", "user"=>{"name"=>"test2", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test2"], ["password_digest", "$2a$12$26ujDhhM1sNJAOmF4/7cp.TxK/oTdcyrKVaoQJtecZMUe.6kqL4EW"], ["created_at", "2020-01-29 12:42:48.957342"], ["updated_at", "2020-01-29 12:42:48.957342"]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8
+Completed 200 OK in 477ms (Views: 0.5ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/" for ::1 at 2020-01-29 23:44:29 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 148ms (Views: 129.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:44:31 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (2.2ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:29
+  Rendered planes/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 104ms (Views: 69.2ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:44:35 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (3.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:18
+  Rendered flights/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 97ms (Views: 68.4ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:44:45 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (0.8ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:29
+  Rendered planes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 65ms (Views: 54.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/planes/new" for ::1 at 2020-01-29 23:44:47 +1100
+Processing by PlanesController#new as HTML
+  Rendering planes/new.html.erb within layouts/application
+  Rendered planes/_form.html.erb (31.8ms)
+  Rendered planes/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 205ms (Views: 114.3ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:45:23 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (2.1ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:29
+  Rendered planes/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 81ms (Views: 72.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:51:30 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (3.6ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:29
+  Rendered planes/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 149ms (Views: 133.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:51:35 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (0.4ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:29
+  Rendered planes/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 65ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:51:38 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (1.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 168ms (Views: 160.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:51:43 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 59ms (Views: 49.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:51:46 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (1.5ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:29
+  Rendered planes/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 56ms (Views: 48.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:52:19 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (1.1ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:30
+  Rendered planes/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 182ms (Views: 171.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:52:22 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 160ms (Views: 147.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:52:24 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (0.8ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:30
+  Rendered planes/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 114ms (Views: 101.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:52:26 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 62ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:54:14 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 149ms (Views: 144.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:54:17 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (5.2ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:30
+  Rendered planes/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 107ms (Views: 87.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:54:25 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 76ms (Views: 64.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:54:27 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 121ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:54:32 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 64ms (Views: 53.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:55:09 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:55:11 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 78ms (Views: 69.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:55:13 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (1.3ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:30
+  Rendered planes/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 56ms (Views: 49.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:55:15 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:55:37 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 119ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:55:47 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (387.1ms)
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `login_path' for #<#<Class:0x007fa15d9e6ca8>:0x007fa159dbde70>):
+     5: </head>
+     6: <body>
+     7:   <%= link_to 'Sign Up', new_user_path %>
+     8:   <%= link_to 'Login', login_path %>
+     9:   <%= link_to 'Planes', planes_path %>
+    10:   <%= link_to 'Flight', flights_path %>
+    11:     <h1>Login</h1>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb___328818436517489486_70165487024680'
+Started GET "/" for ::1 at 2020-01-29 23:55:48 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (449.0ms)
+Completed 500 Internal Server Error in 602ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `login_path' for #<#<Class:0x007fa15d9e6ca8>:0x007fa159b54d50>):
+     5: </head>
+     6: <body>
+     7:   <%= link_to 'Sign Up', new_user_path %>
+     8:   <%= link_to 'Login', login_path %>
+     9:   <%= link_to 'Planes', planes_path %>
+    10:   <%= link_to 'Flight', flights_path %>
+    11:     <h1>Login</h1>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb___328818436517489486_70165485761220'
+Started GET "/" for ::1 at 2020-01-29 23:56:26 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:11: unknown regexp option - h
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:11: unmatched close parenthesis: / );@output_buffer.safe_append='
+  '.freeze;@output_buffer.append=( link_to 'Planes', planes_path );@output_buffer.safe_append='
+  '.freeze;@output_buffer.append=( link_to 'Flight', flights_path );@output_buffer.safe_append='
+    <h1>Login</
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+    <h1>Login</h1>
+                 ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+form action="/sessions" method="POST">
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:14: syntax error, unexpected '<'
+        <input type="hidden" name="auth
+         ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+     <input type="hidden" name="authenticity_token" value="'
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+ame="authenticity_token" value="'.freeze;@output_buffer.appe
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:15: syntax error, unexpected '<'
+        <input type="text" name="login[
+         ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+       <input type="text" name="login[name]" placeholder="us
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+name="login[name]" placeholder="username">
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:16: syntax error, unexpected '<'
+        <input type="password" name="lo
+         ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+   <input type="password" name="login[password]" placeholder
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+="login[password]" placeholder="password">
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:17: syntax error, unexpected '<'
+        <input type="submit" name="subm
+         ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+     <input type="submit" name="submit" class="submit">
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:17: syntax error, unexpected keyword_class, expecting ')'
+e="submit" name="submit" class="submit">
+                              ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:18: syntax error, unexpected '<'
+    </form>
+     ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:21: unknown regexp options - bdy
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:22: syntax error, unexpected '<'
+</html>
+ ^
+/Users/hasan/sei/homework/hasan-aliyev/week8/d3/app/views/users/index.html.erb:22: unterminated regexp meets end of file):
+  
+app/views/users/index.html.erb:11: unknown regexp option - h
+app/views/users/index.html.erb:11: unmatched close parenthesis: / );@output_buffer.safe_append='
+app/views/users/index.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/users/index.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected '<'
+app/views/users/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/index.html.erb:15: syntax error, unexpected '<'
+app/views/users/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/index.html.erb:16: syntax error, unexpected '<'
+app/views/users/index.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/index.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/index.html.erb:17: syntax error, unexpected '<'
+app/views/users/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/index.html.erb:17: syntax error, unexpected keyword_class, expecting ')'
+app/views/users/index.html.erb:18: syntax error, unexpected '<'
+app/views/users/index.html.erb:21: unknown regexp options - bdy
+app/views/users/index.html.erb:22: syntax error, unexpected '<'
+app/views/users/index.html.erb:22: unterminated regexp meets end of file
+Started GET "/" for ::1 at 2020-01-29 23:56:42 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (423.9ms)
+Completed 500 Internal Server Error in 474ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x007fa15d9e6ca8>:0x007fa1595f73f8>):
+     5: </head>
+     6: <body>
+     7:   <%= link_to 'Sign Up', new_user_path %>
+     8:   <%= link_to 'Login', root %>
+     9:   <%= link_to 'Planes', planes_path %>
+    10:   <%= link_to 'Flight', flights_path %>
+    11:     <h1>Login</h1>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb___328818436517489486_70165482956460'
+Started GET "/" for ::1 at 2020-01-29 23:56:55 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (331.1ms)
+Completed 500 Internal Server Error in 386ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007fa15d9e6ca8>:0x007fa159c7d830>
+Did you mean?  font_path):
+     5: </head>
+     6: <body>
+     7:   <%= link_to 'Sign Up', new_user_path %>
+     8:   <%= link_to 'Login', root_path %>
+     9:   <%= link_to 'Planes', planes_path %>
+    10:   <%= link_to 'Flight', flights_path %>
+    11:     <h1>Login</h1>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb___328818436517489486_70165486381000'
+Started GET "/" for ::1 at 2020-01-29 23:57:30 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+     5: </head>
+     6: <body>
+     7:   <%= link_to 'Sign Up', new_user_path %>
+     8:   <%= link_to 'Login', user_path %>
+     9:   <%= link_to 'Planes', planes_path %>
+    10:   <%= link_to 'Flight', flights_path %>
+    11:     <h1>Login</h1>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb___328818436517489486_70165482781220'
+Started GET "/" for ::1 at 2020-01-29 23:57:37 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 118ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:57:41 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 131ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:58:29 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 133ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:58:31 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:58:33 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 47ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:58:34 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (2.6ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:30
+  Rendered planes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 52ms (Views: 43.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:58:56 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 248ms (Views: 236.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:58:59 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (0.8ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:30
+  Rendered planes/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 93ms (Views: 83.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:59:02 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (1.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:59:04 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 65ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:59:18 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:59:21 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 47ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-29 23:59:23 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (0.5ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:31
+  Rendered planes/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 45ms (Views: 37.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:59:25 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-29 23:59:26 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 46ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:59:28 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-01-29 23:59:47 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 114ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-29 23:59:52 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 168ms (Views: 161.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2020-01-30 00:00:07 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 148ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-01-30 00:00:09 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 104ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-30 00:00:12 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (1.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 97ms (Views: 83.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for ::1 at 2020-01-30 00:00:13 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 148ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-30 00:00:15 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 67ms (Views: 58.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-30 00:00:31 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (36.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:23
+  Rendered flights/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 177ms (Views: 131.9ms | ActiveRecord: 36.1ms)
+
+
+Started GET "/planes" for ::1 at 2020-01-30 00:00:34 +1100
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (1.4ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:31
+  Rendered planes/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 133ms (Views: 118.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-30 00:00:36 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:23
+  Rendered flights/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 142ms (Views: 128.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for ::1 at 2020-01-30 00:00:38 +1100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 94ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
