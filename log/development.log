@@ -4370,3 +4370,52 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 4.9ms)
 
 
+Started GET "/rails/info/routes" for ::1 at 2020-01-30 09:56:53 +1100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (15.4ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.2ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 61ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-30 10:06:54 +1100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [33 times] (7.6ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for ::1 at 2020-01-30 10:07:29 +1100
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (4.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:23
+  Rendered flights/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 424ms (Views: 391.5ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/flights/sydney/melb" for ::1 at 2020-01-30 10:07:37 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melb"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights/sydney/melb" for ::1 at 2020-01-30 10:08:11 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melb"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights/sydney/melb" for ::1 at 2020-01-30 10:10:51 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melb"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+

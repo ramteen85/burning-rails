@@ -2,5 +2,8 @@ Rails.application.routes.draw do
   resources :planes
   resources :sessions
   resources :users
-  resources :planes
+  resources :flights
+
+  get '/flights/:origin/:destination' => 'flights#getflights'
+
 end

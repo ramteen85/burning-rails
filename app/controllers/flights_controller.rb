@@ -1,10 +1,31 @@
 class FlightsController < ApplicationController
   before_action :set_flight, only: [:show, :edit, :update, :destroy]
+  before_action :allow_cors
 
   # GET /flights
   # GET /flights.json
   def index
     @flights = Flight.all
+  end
+
+  def getflights
+    @flights = [{
+        date: "20/12/2020",
+        origin: 'SYD',
+        destination: 'MEL',
+        plane: 747
+      },
+      {
+        date: "20/12/2020",
+        origin: 'SYD',
+        destination: 'MEL',
+        plane: 747
+      }
+    ]
+
+
+    render json: @flights
+
   end
 
   # GET /flights/1
@@ -70,5 +91,9 @@ class FlightsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def flight_params
       params.require(:flight).permit(:flight_number, :origin, :destination, :date, :plane_id)
+    end
+
+    def allow_cors
+      headers['Access-Control-Allow-Origin'] = '*'
     end
 end
