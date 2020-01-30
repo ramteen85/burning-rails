@@ -10,6 +10,8 @@ class PlanesController < ApplicationController
   # GET /planes/1
   # GET /planes/1.json
   def show
+    @plane = Plane.find params[:id]
+    render json: @plane
   end
 
   # GET /planes/new
