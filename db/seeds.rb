@@ -13,6 +13,7 @@ User.create([{name: 'Ram'}])
 Plane.create([{ name: "747", rows: 7, columns: 5 }])
 
 Flight.create([{ flight_number: '822AUS', origin: "sydney", destination: "melbourne", date: "12/2/3030", plane_id: 1 }])
+Flight.create([{ flight_number: '833AUS', origin: "sydney", destination: "melbourne", date: "13/5/3030", plane_id: 1 }])
 Flight.create([{ flight_number: '822AUS', origin: "melbourne", destination: "queensland", date: "12/2/3030", plane_id: 1 }])
 
 Reservation.create([{row: 13, column: "A", flight_id: 1, user_id: 1}])
