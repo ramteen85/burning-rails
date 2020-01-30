@@ -7069,3 +7069,199 @@ Processing by FlightsController#getflights as HTML
 Completed 200 OK in 19ms (Views: 7.8ms | ActiveRecord: 7.4ms)
 
 
+Started GET "/flights/1" for ::1 at 2020-01-30 13:15:35 +1100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:82
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+Completed 200 OK in 30ms (Views: 1.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/flights/2" for ::1 at 2020-01-30 13:16:03 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFlight Load (1.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:82
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/flights/1" for ::1 at 2020-01-30 13:16:07 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:82
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/flights/1" for ::1 at 2020-01-30 13:18:20 +1100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+      @flight,
+              ^):
+  
+app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+Started GET "/flights/1" for ::1 at 2020-01-30 13:18:21 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+      @flight,
+              ^):
+  
+app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+Started GET "/flights/1" for ::1 at 2020-01-30 13:18:22 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+      @flight,
+              ^):
+  
+app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+Started GET "/flights/1" for ::1 at 2020-01-30 13:18:22 +1100
+Started GET "/flights/1" for ::1 at 2020-01-30 13:18:22 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+      @flight,
+              ^):
+  
+app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+  
+Started GET "/flights/1" for ::1 at 2020-01-30 13:18:23 +1100
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+      @flight,
+              ^):
+  
+app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+      @flight,
+              ^):
+  
+app/controllers/flights_controller.rb:29: syntax error, unexpected ',', expecting =>
+Started GET "/flights/1" for ::1 at 2020-01-30 13:18:42 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:87
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+  [1m[36mPlane Load (0.6ms)[0m  [1m[34mSELECT  "planes".* FROM "planes" WHERE "planes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:27
+Completed 200 OK in 44ms (Views: 0.8ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/flights/1" for ::1 at 2020-01-30 13:21:35 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:86
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+  [1m[36mPlane Load (0.3ms)[0m  [1m[34mSELECT  "planes".* FROM "planes" WHERE "planes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:27
+Completed 406 Not Acceptable in 38ms (Views: 0.4ms | ActiveRecord: 14.5ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/flights_controller.rb:29:in `show'
+Started GET "/flights/1" for ::1 at 2020-01-30 13:21:51 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:85
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+  [1m[36mPlane Load (0.3ms)[0m  [1m[34mSELECT  "planes".* FROM "planes" WHERE "planes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:27
+Completed 200 OK in 33ms (Views: 0.5ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/flights/1" for ::1 at 2020-01-30 13:24:42 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:88
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+  [1m[36mPlane Load (0.4ms)[0m  [1m[34mSELECT  "planes".* FROM "planes" WHERE "planes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:27
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 17.7ms)
+
+
+  
+NameError (uninitialized constant ActiveModel::Serializer):
+  
+app/controllers/flights_controller.rb:30:in `show'
+Started GET "/flights/1" for ::1 at 2020-01-30 13:25:55 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:88
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+  [1m[36mPlane Load (0.7ms)[0m  [1m[34mSELECT  "planes".* FROM "planes" WHERE "planes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:27
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/flights/1" for ::1 at 2020-01-30 13:33:12 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:33: syntax error, unexpected tIDENTIFIER, expecting '}'
+      reservations: @reservations
+                  ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:101: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/flights_controller.rb:33: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/controllers/flights_controller.rb:101: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/flights/1" for ::1 at 2020-01-30 13:33:35 +1100
+  
+SyntaxError (/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:33: syntax error, unexpected tIDENTIFIER, expecting '}'
+      reservations: @reservations
+                  ^
+/Users/ram/Desktop/GA PROJECTS/burning-airlines/burning-rails/app/controllers/flights_controller.rb:101: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/flights_controller.rb:33: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/controllers/flights_controller.rb:101: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/flights/1" for ::1 at 2020-01-30 13:34:02 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:90
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:26
+  [1m[36mPlane Load (0.5ms)[0m  [1m[34mSELECT  "planes".* FROM "planes" WHERE "planes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:27
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+Completed 200 OK in 54ms (Views: 11.6ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/users/1" for ::1 at 2020-01-30 13:35:31 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 406ms (Views: 386.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/users/1" for ::1 at 2020-01-30 13:36:25 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 5.4ms)
+
+

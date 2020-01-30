@@ -23,8 +23,16 @@ class FlightsController < ApplicationController
   # GET /flights/1
   # GET /flights/1.json
   def show
-    @flight = Flight.where id: params[:id]
-    render json: @flight
+    @flight = Flight.find params[:id]
+    @plane = Plane.find @flight.plane_id
+    @reservations = Reservation.where flight_id: params[:id]
+
+    render json: {
+      flight: @flight,
+      plane: @plane,
+      reservations: @reservations
+    }
+
   end
 
   # GET /flights/new
