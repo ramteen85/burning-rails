@@ -6426,3 +6426,99 @@ Processing by PlanesController#index as HTML
 Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/planes/" for ::1 at 2020-01-30 12:27:05 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by PlanesController#index as HTML
+  Rendering planes/index.html.erb within layouts/application
+  [1m[36mPlane Load (0.7ms)[0m  [1m[34mSELECT "planes".* FROM "planes"[0m
+  ↳ app/views/planes/index.html.erb:16
+  Rendered planes/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 360ms (Views: 337.4ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-30 12:27:12 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [41 times] (12.7ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.4.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /Users/ram/.rvm/gems/ruby-2.4.1/gems/railties-5.2.4.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 47ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for ::1 at 2020-01-30 12:27:26 +1100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (5.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:15
+  Rendered reservations/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 80ms (Views: 53.3ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/reservations/new" for ::1 at 2020-01-30 12:28:05 +1100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/_form.html.erb (17.7ms)
+  Rendered reservations/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 66ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reservations" for ::1 at 2020-01-30 12:28:09 +1100
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nK6PKSsihB9a0Mk09MPT02rtakjECuPX4U6+YHOXl1wHPIVD4TTzwf5/LyvW/P00QEhmZ5WRkJ2JQtVR7jmlaA==", "reservation"=>{"row"=>"22", "column"=>"B"}, "commit"=>"Create Reservation"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reservations_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/reservations_controller.rb:30
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/_form.html.erb (2.4ms)
+  Rendered reservations/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 67ms (Views: 44.6ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Admin"], ["created_at", "2020-01-30 01:28:26.726024"], ["updated_at", "2020-01-30 01:28:26.726024"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ram"], ["created_at", "2020-01-30 01:28:26.730999"], ["updated_at", "2020-01-30 01:28:26.730999"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPlane Create (0.5ms)[0m  [1m[32mINSERT INTO "planes" ("name", "rows", "columns", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "747"], ["rows", 7], ["columns", 5], ["created_at", "2020-01-30 01:28:26.744889"], ["updated_at", "2020-01-30 01:28:26.744889"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mFlight Create (1.2ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "origin", "destination", "date", "plane_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["flight_number", "822AUS"], ["origin", "Sydney"], ["destination", "Melbourne"], ["date", "3030-02-12"], ["plane_id", 1], ["created_at", "2020-01-30 01:28:26.763499"], ["updated_at", "2020-01-30 01:28:26.763499"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mFlight Load (4.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mReservation Create (0.9ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "flight_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["row", 13], ["column", "A"], ["flight_id", 1], ["user_id", 1], ["created_at", "2020-01-30 01:28:26.809342"], ["updated_at", "2020-01-30 01:28:26.809342"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "flight_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["row", 22], ["column", "B"], ["flight_id", 1], ["user_id", 2], ["created_at", "2020-01-30 01:28:26.815332"], ["updated_at", "2020-01-30 01:28:26.815332"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18

@@ -13,26 +13,10 @@ class FlightsController < ApplicationController
     origin = params[:origin];
     destination = params[:destination];
 
-    @flights = [{
-        id: "l337",
-        flightnumber: 9,
-        date: "20/12/2020",
-        origin: 'SYD',
-        destination: 'MEL',
-        plane: 747
-      },
-      {
-        id: 1337,
-        flightnumber: 10,
-        date: "20/12/2020",
-        origin: 'SYD',
-        destination: 'MEL',
-        plane: 747
-      }
-    ]
+    @searched_flights = Flight.find_by origin: params[:origin], destination: params[:destination]
 
 
-    render json: @flights
+    render json: @searched_flights
 
   end
 
