@@ -6522,3 +6522,240 @@ Completed 200 OK in 67ms (Views: 44.6ms | ActiveRecord: 0.4ms)
   ↳ db/seeds.rb:18
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:18
+Started GET "/reservations" for ::1 at 2020-01-30 12:47:53 +1100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (3.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:15
+  Rendered reservations/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 346ms (Views: 319.1ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/flights/sydney/melbourne" for ::1 at 2020-01-30 12:48:03 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melbourne"}
+  [1m[36mFlight Load (6.9ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."origin" = $1 AND "flights"."destination" = $2 LIMIT $3[0m  [["origin", "sydney"], ["destination", "melbourne"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+Completed 200 OK in 31ms (Views: 0.6ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/flights/Sydney/Melbourne" for ::1 at 2020-01-30 12:48:20 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"Sydney", "destination"=>"Melbourne"}
+  [1m[36mFlight Load (3.9ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."origin" = $1 AND "flights"."destination" = $2 LIMIT $3[0m  [["origin", "Sydney"], ["destination", "Melbourne"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+Completed 200 OK in 37ms (Views: 0.6ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/flights/sydney/melbourne" for ::1 at 2020-01-30 12:49:54 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melbourne"}
+  [1m[36mFlight Load (0.8ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."origin" = $1 AND "flights"."destination" = $2 LIMIT $3[0m  [["origin", "sydney"], ["destination", "melbourne"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/flights/sydney/melbourne" for ::1 at 2020-01-30 12:50:08 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melbourne"}
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."origin" = $1 AND "flights"."destination" = $2 LIMIT $3[0m  [["origin", "sydney"], ["destination", "melbourne"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/sydney/melbourne" for ::1 at 2020-01-30 12:50:09 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melbourne"}
+  [1m[36mFlight Load (0.7ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."origin" = $1 AND "flights"."destination" = $2 LIMIT $3[0m  [["origin", "sydney"], ["destination", "melbourne"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/flights/sydney/melbourne" for ::1 at 2020-01-30 12:50:10 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melbourne"}
+  [1m[36mFlight Load (0.6ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."origin" = $1 AND "flights"."destination" = $2 LIMIT $3[0m  [["origin", "sydney"], ["destination", "melbourne"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights/sydney/melbourne" for ::1 at 2020-01-30 12:50:13 +1100
+Processing by FlightsController#getflights as HTML
+  Parameters: {"origin"=>"sydney", "destination"=>"melbourne"}
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."origin" = $1 AND "flights"."destination" = $2 LIMIT $3[0m  [["origin", "sydney"], ["destination", "melbourne"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3605488183007144280)[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateUsers (20200130010250)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (9.3ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200130010250"]]
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreatePlanes (20200130005833)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "planes"[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200130005833"]]
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateReservations (20200130003626)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "reservations"[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200130003626"]]
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateFlights (20200129092455)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "flights"[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200129092455"]]
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3605488183007144280)[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ram/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (48.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "burning-rails_development"[0m
+  ↳ bin/rails:4
+  [1m[35m (37.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "burning-rails_test"[0m
+  ↳ bin/rails:4
+  [1m[35m (229.4ms)[0m  [1m[35mCREATE DATABASE "burning-rails_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (107.6ms)[0m  [1m[35mCREATE DATABASE "burning-rails_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3605488183007144280)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateFlights (20200129092455)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "flights" ("id" bigserial primary key, "flight_number" character varying, "origin" character varying, "destination" character varying, "date" date, "plane_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200129092455_create_flights.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200129092455"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReservations (20200130003626)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "reservations" ("id" bigserial primary key, "row" integer, "column" character varying, "flight_id" integer, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200130003626_create_reservations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200130003626"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreatePlanes (20200130005833)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "planes" ("id" bigserial primary key, "name" character varying, "rows" integer, "columns" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200130005833_create_planes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200130005833"]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20200130010250)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200130010250_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200130010250"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-30 01:51:17.384934"], ["updated_at", "2020-01-30 01:51:17.384934"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3605488183007144280)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Admin"], ["created_at", "2020-01-30 01:51:22.264515"], ["updated_at", "2020-01-30 01:51:22.264515"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ram"], ["created_at", "2020-01-30 01:51:22.268200"], ["updated_at", "2020-01-30 01:51:22.268200"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPlane Create (0.7ms)[0m  [1m[32mINSERT INTO "planes" ("name", "rows", "columns", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "747"], ["rows", 7], ["columns", 5], ["created_at", "2020-01-30 01:51:22.281601"], ["updated_at", "2020-01-30 01:51:22.281601"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mFlight Create (0.6ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "origin", "destination", "date", "plane_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["flight_number", "822AUS"], ["origin", "sydney"], ["destination", "melbourne"], ["date", "3030-02-12"], ["plane_id", 1], ["created_at", "2020-01-30 01:51:22.299715"], ["updated_at", "2020-01-30 01:51:22.299715"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mFlight Create (0.5ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "origin", "destination", "date", "plane_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["flight_number", "822AUS"], ["origin", "melbourne"], ["destination", "queensland"], ["date", "3030-02-12"], ["plane_id", 1], ["created_at", "2020-01-30 01:51:22.302569"], ["updated_at", "2020-01-30 01:51:22.302569"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mReservation Create (0.7ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "flight_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["row", 13], ["column", "A"], ["flight_id", 1], ["user_id", 1], ["created_at", "2020-01-30 01:51:22.341576"], ["updated_at", "2020-01-30 01:51:22.341576"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "flight_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["row", 22], ["column", "B"], ["flight_id", 1], ["user_id", 2], ["created_at", "2020-01-30 01:51:22.347548"], ["updated_at", "2020-01-30 01:51:22.347548"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19

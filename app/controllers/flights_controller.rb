@@ -13,7 +13,7 @@ class FlightsController < ApplicationController
     origin = params[:origin];
     destination = params[:destination];
 
-    @searched_flights = Flight.find_by origin: params[:origin], destination: params[:destination]
+    @searched_flights = Flight.find_by origin: params[:origin].downcase, destination: params[:destination].downcase
 
 
     render json: @searched_flights
