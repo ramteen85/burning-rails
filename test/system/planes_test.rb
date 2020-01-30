@@ -14,22 +14,9 @@ class PlanesTest < ApplicationSystemTestCase
     visit planes_url
     click_on "New Plane"
 
-    fill_in "A1", with: @plane.A1
-    fill_in "A2", with: @plane.A2
-    fill_in "A3", with: @plane.A3
-    fill_in "A4", with: @plane.A4
-    fill_in "A5", with: @plane.A5
-    fill_in "B1", with: @plane.B1
-    fill_in "B2", with: @plane.B2
-    fill_in "B3", with: @plane.B3
-    fill_in "B4", with: @plane.B4
-    fill_in "B5", with: @plane.B5
-    fill_in "C1", with: @plane.C1
-    fill_in "C2", with: @plane.C2
-    fill_in "C3", with: @plane.C3
-    fill_in "C4", with: @plane.C4
-    fill_in "C5", with: @plane.C5
+    fill_in "Columns", with: @plane.columns
     fill_in "Name", with: @plane.name
+    fill_in "Rows", with: @plane.rows
     click_on "Create Plane"
 
     assert_text "Plane was successfully created"
@@ -40,22 +27,9 @@ class PlanesTest < ApplicationSystemTestCase
     visit planes_url
     click_on "Edit", match: :first
 
-    fill_in "A1", with: @plane.A1
-    fill_in "A2", with: @plane.A2
-    fill_in "A3", with: @plane.A3
-    fill_in "A4", with: @plane.A4
-    fill_in "A5", with: @plane.A5
-    fill_in "B1", with: @plane.B1
-    fill_in "B2", with: @plane.B2
-    fill_in "B3", with: @plane.B3
-    fill_in "B4", with: @plane.B4
-    fill_in "B5", with: @plane.B5
-    fill_in "C1", with: @plane.C1
-    fill_in "C2", with: @plane.C2
-    fill_in "C3", with: @plane.C3
-    fill_in "C4", with: @plane.C4
-    fill_in "C5", with: @plane.C5
+    fill_in "Columns", with: @plane.columns
     fill_in "Name", with: @plane.name
+    fill_in "Rows", with: @plane.rows
     click_on "Update Plane"
 
     assert_text "Plane was successfully updated"

@@ -2,36 +2,10 @@
 
 one:
   name: MyString
-  A1: MyString
-  A2: MyString
-  A3: MyString
-  A4: MyString
-  A5: MyString
-  B1: MyString
-  B2: MyString
-  B3: MyString
-  B4: MyString
-  B5: MyString
-  C1: MyString
-  C2: MyString
-  C3: MyString
-  C4: MyString
-  C5: MyString
+  rows: 1
+  columns: 1
 
 two:
   name: MyString
-  A1: MyString
-  A2: MyString
-  A3: MyString
-  A4: MyString
-  A5: MyString
-  B1: MyString
-  B2: MyString
-  B3: MyString
-  B4: MyString
-  B5: MyString
-  C1: MyString
-  C2: MyString
-  C3: MyString
-  C4: MyString
-  C5: MyString
+  rows: 1
+  columns: 1

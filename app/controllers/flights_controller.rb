@@ -9,6 +9,10 @@ class FlightsController < ApplicationController
   end
 
   def getflights
+
+    origin = params[:origin];
+    destination = params[:destination];
+
     @flights = [{
         id: "l337",
         flightnumber: 9,

@@ -17,7 +17,7 @@ class PlanesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create plane" do
     assert_difference('Plane.count') do
-      post planes_url, params: { plane: { A1: @plane.A1, A2: @plane.A2, A3: @plane.A3, A4: @plane.A4, A5: @plane.A5, B1: @plane.B1, B2: @plane.B2, B3: @plane.B3, B4: @plane.B4, B5: @plane.B5, C1: @plane.C1, C2: @plane.C2, C3: @plane.C3, C4: @plane.C4, C5: @plane.C5, name: @plane.name } }
+      post planes_url, params: { plane: { columns: @plane.columns, name: @plane.name, rows: @plane.rows } }
     end
 
     assert_redirected_to plane_url(Plane.last)
@@ -34,7 +34,7 @@ class PlanesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update plane" do
-    patch plane_url(@plane), params: { plane: { A1: @plane.A1, A2: @plane.A2, A3: @plane.A3, A4: @plane.A4, A5: @plane.A5, B1: @plane.B1, B2: @plane.B2, B3: @plane.B3, B4: @plane.B4, B5: @plane.B5, C1: @plane.C1, C2: @plane.C2, C3: @plane.C3, C4: @plane.C4, C5: @plane.C5, name: @plane.name } }
+    patch plane_url(@plane), params: { plane: { columns: @plane.columns, name: @plane.name, rows: @plane.rows } }
     assert_redirected_to plane_url(@plane)
   end
 

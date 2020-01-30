@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_29_092455) do
+ActiveRecord::Schema.define(version: 2020_01_30_010250) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,28 +27,23 @@ ActiveRecord::Schema.define(version: 2020_01_29_092455) do
 
   create_table "planes", force: :cascade do |t|
     t.string "name"
-    t.string "A1", default: "empty"
-    t.string "A2", default: "empty"
-    t.string "A3", default: "empty"
-    t.string "A4", default: "empty"
-    t.string "A5", default: "empty"
-    t.string "B1", default: "empty"
-    t.string "B2", default: "empty"
-    t.string "B3", default: "empty"
-    t.string "B4", default: "empty"
-    t.string "B5", default: "empty"
-    t.string "C1", default: "empty"
-    t.string "C2", default: "empty"
-    t.string "C3", default: "empty"
-    t.string "C4", default: "empty"
-    t.string "C5", default: "empty"
+    t.integer "rows"
+    t.integer "columns"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.integer "row"
+    t.string "column"
+    t.integer "flight_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
